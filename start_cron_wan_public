@@ -1,0 +1,6 @@
+#!/bin/sh
+# This cript get called after all other system services 
+# have been started at boot on router
+# ---------------------------------------------------------
+# Run my script every day at midnight 
+cru a wanreset "0 0 * * * /jffs/scripts/cron_wan_public.sh"
