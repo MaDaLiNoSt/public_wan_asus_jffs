@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# Run my script every day at midnight 
-cru a wanreset "*/10 * * * * /jffs/scripts/cron_wan_public.sh" &
+# Run my script every 5 minutes
+cru a wanreset "*/5 * * * * /jffs/scripts/cron_wan_public.sh" &
