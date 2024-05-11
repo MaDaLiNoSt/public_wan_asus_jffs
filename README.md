@@ -6,6 +6,6 @@ Merlin and Entware required
 opkg update
 opkg install bind-dig
 
-chmod a+rx /jffs/scripts/start_cron_wan_public
+chmod a+rx /jffs/scripts/init-start
 chmod a+rx /jffs/scripts/cron_wan_public.sh
 ```
