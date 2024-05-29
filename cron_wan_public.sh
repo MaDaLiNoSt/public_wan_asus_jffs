@@ -41,7 +41,7 @@ echo 'ending wan script ' `date` >> log.txt
 
 #CLEANUP
 LINES_COUNTER=$(grep -c "^" log.txt)
-if [ "$LINES_COUNTER" -gt 35 ]; 
+if [ "$LINES_COUNTER" -gt 350 ]; 
 then rm log.txt
 echo 'Logs cleaned after ' $LINES_COUNTER ' rows' >>log.txt
 else echo 'Autocleanup not needed. Lines: ' $LINES_COUNTER  >>log.txt
